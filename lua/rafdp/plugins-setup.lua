@@ -54,7 +54,7 @@ return packer.startup(function(use)
 
   use("nvim-treesitter/nvim-treesitter")
 
-  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
   use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
   use("hrsh7th/nvim-cmp") -- completion plugin
@@ -64,6 +64,7 @@ return packer.startup(function(use)
   use ("lukas-reineke/cmp-rg")
 
   use { "catppuccin/nvim", as = "catppuccin" }
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
   if packer_bootstrap then
     require("packer").sync()

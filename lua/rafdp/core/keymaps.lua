@@ -31,3 +31,11 @@ km.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in 
 km.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
 km.set("n", "<leader>w", ":w<CR>")
+
+km.set("n", "<leader>zv", ":vsplit +term<CR>")
+km.set("n", "<leader>zh", ":split +term<CR>")
+km.set("n", "<leader>zz", ":term<CR>")
+km.set("t", "kj", "<C-\\><C-n>")
+
+km.set('n', '<leader>J', require('ufo').openAllFolds)
+km.set('n', '<leader>K', require('ufo').closeAllFolds)
