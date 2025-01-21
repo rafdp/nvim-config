@@ -37,5 +37,9 @@ km.set("n", "<leader>zh", ":split +term<CR>")
 km.set("n", "<leader>zz", ":term<CR>")
 km.set("t", "kj", "<C-\\><C-n>")
 
-km.set('n', '<leader>J', require('ufo').openAllFolds)
-km.set('n', '<leader>K', require('ufo').closeAllFolds)
+km.set("n", "<leader>hp", ":Gitsigns preview_hunk_inline<CR>")
+km.set("n", "<leader>hn", ":Gitsigns next_hunk<CR>")
+km.set("n", "<leader>hN", ":Gitsigns prev_hunk<CR>")
+
+-- km.set('n', '<leader>J', require('ufo').openAllFolds)
+-- km.set('n', '<leader>K', require('ufo').closeAllFolds)

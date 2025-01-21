@@ -63,8 +63,10 @@ return packer.startup(function(use)
   use {'tzachar/cmp-fuzzy-buffer', requires = {'hrsh7th/nvim-cmp', 'tzachar/fuzzy.nvim'}}
   use ("lukas-reineke/cmp-rg")
 
-  use { "catppuccin/nvim", as = "catppuccin" }
-  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+  use { 'catppuccin/nvim', as = "catppuccin" }
+  -- use {"kevinhwang91/nvim-ufo", requires = 'kevinhwang91/promise-async'}
+
+  use {"lewis6991/gitsigns.nvim"}
 
   if packer_bootstrap then
     require("packer").sync()
